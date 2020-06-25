@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "label": "buy flowers to my wife",
+    "date": "2020-06-30",
+    "done": true
+  },
+  {
+    "id": 2,
+    "label": "clean the garage",
+    "date": "2020-06-17",
+    "done": false
+  },
+  {
+    "id": 3,
+    "label": "do the shopping",
+    "date": "2020-07-10",
+    "done": true
+  },
+  {
+    "id": 4,
+    "label": "fix the motorcycle",
+    "date": "2020-06-20",
+    "done": false
+  },
+  {
+    "id": 5,
+    "label": "fix the washing machine",
+    "date": "2020-07-01",
+    "done": false
+  },
+  {
+    "id": 6,
+    "label": "buy a birthsday gift",
+    "date": "2020-06-29",
+    "done": false
+  },
+  {
+    "id": 7,
+    "label": "do the homework",
+    "date": "2020-07-01",
+    "done": false
+  },
+  {
+    "id": 8,
+    "label": "help my mother",
+    "date": "2020-07-12",
+    "done": false
+  },
+  {
+    "id": 9,
+    "label": "buy few beers",
+    "date": "2020-06-30",
+    "done": false
+  },
+  {
+    "id": 10,
+    "label": "pay the bills",
+    "date": "2020-07-10",
+    "done": true
+  },
+  {
+    "id": 11,
+    "label": "fix a bug ;)",
+    "date": "2020-06-27",
+    "done": false
+  },
+  {
+    "id": 12,
+    "label": "clean the car outside and inside!",
+    "date": "2020-07-01",
+    "done": false
+  }
+]

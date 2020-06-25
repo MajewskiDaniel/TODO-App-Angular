@@ -1,0 +1,12 @@
+<div class="tasklist" *ngIf="list.length !== 0">
+  <h3>
+    {{ title }}
+  </h3>
+  <ng-container *ngFor="let task of list">
+    <app-task-item
+      [task]="task"
+      (changed)="onTaskChanged($event)"
+      (remove)="onRemove($event)"
+    ></app-task-item>
+  </ng-container>
+</div>

@@ -1,0 +1,22 @@
+<div class="task">
+  <div class="wrapper">
+    <input
+      class="checkbox"
+      type="checkbox"
+      [checked]="task.done"
+      (click)="checkboxChanged()"
+    />
+    <span class="label"> {{ task.label }}</span>
+  </div>
+  <div class="section">
+    <div class="date">{{ task.date | date: "dd MMMM" }}</div>
+    <div class="icons">
+      <a class="edit" [routerLink]="['/task', task.id, 'edit']"
+        ><i class="far fa-edit"></i
+      ></a>
+      <button class="delete" (click)="onRemove()">
+        <i class="fas fa-trash"></i>
+      </button>
+    </div>
+  </div>
+</div>

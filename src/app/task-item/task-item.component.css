@@ -1,0 +1,63 @@
+.task {
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  background: white;
+  border-radius: 10px;
+  margin: 8px 0px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper {
+  min-width: 65%;
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+}
+.checkbox {
+  background-color: white;
+  align-self: center;
+}
+.label {
+  margin-left: 8px;
+  flex-grow: 1;
+}
+.date {
+  margin: 0px 10px;
+  line-height: 26px;
+  font-size: 14px;
+  text-align: right;
+  color: grey;
+}
+.icons {
+  display: flex;
+}
+.edit {
+  cursor: pointer;
+  margin: 0px 15px;
+}
+.edit i {
+  color: grey;
+  font-size: 16px;
+  line-height: 24px;
+}
+.delete {
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  margin: 0 5px;
+  font-size: 16px;
+  line-height: 24px;
+  color: grey;
+}
+
+@media (min-width: 600px) {
+  .section {
+    flex-direction: row;
+  }
+}

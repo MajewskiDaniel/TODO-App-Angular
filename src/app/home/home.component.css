@@ -1,0 +1,48 @@
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+.add {
+  margin: 120px 15px 15px 10px;
+  cursor: pointer;
+  height: 36px;
+  width: 120px;
+  border-radius: 18px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(225deg, #d650b3 0%, #6137d3 100%);
+}
+
+.add a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  line-height: 36px;
+  font-size: 14px;
+  text-align: center;
+  transition: 0.2s linear;
+}
+.add:hover a {
+  font-size: 15px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #e7e7e7;
+}
+.tasks {
+  margin: 0 10px 20px 10px;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+}

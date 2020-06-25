@@ -1,0 +1,40 @@
+<div class="home">
+  <header>
+    <h1>
+      Task List
+    </h1>
+  </header>
+  <section class="nav">
+    <button class="add">
+      <a class="router" routerLink="/task">Add Task</a>
+    </button>
+    <div class="line"></div>
+  </section>
+  <div class="tasks">
+    <app-task-list
+      title="Overdue"
+      [list]="dataService.list | isDone: false | sort | dateFilter: 'isLate'"
+      (taskChanged)="onTaskChange($event)"
+      (taskRemove)="onTaskRemove($event)"
+    ></app-task-list>
+    <app-task-list
+      title="Today"
+      [list]="dataService.list | isDone: false | sort | dateFilter: 'isToday'"
+      (taskChanged)="onTaskChange($event)"
+      (taskRemove)="onTaskRemove($event)"
+    ></app-task-list>
+    <app-task-list
+      title="Upcoming"
+      [list]="dataService.list | isDone: false | sort | dateFilter: 'isFuture'"
+      (taskChanged)="onTaskChange($event)"
+      (taskRemove)="onTaskRemove($event)"
+    ></app-task-list>
+
+    <app-task-list
+      title="Tasks done"
+      [list]="dataService.list | isDone | sort"
+      (taskChanged)="onTaskChange($event)"
+      (taskRemove)="onTaskRemove($event)"
+    ></app-task-list>
+  </div>
+</div>
